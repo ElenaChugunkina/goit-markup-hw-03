@@ -7,13 +7,66 @@ body {
 
  a {
     text-decoration: none;
+    color: currentColor;
 }
 ul {
 	list-style-type: none;
+    margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 }
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+    margin-bottom: 0;
+    
+
+}
+
+img {
+	display: block;
+}
+
+button {
+    cursor: pointer;
+ }
+
+ address {
+    font-style: normal;
+ }
+
+
+.container {
+    width: 100%;
+    max-width: 1128px ;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+  
+ }
+
+ 
+
 
 .navigation { 
     background:  #FFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
+    
+    
+}
+
+.header-container { 
+    
+}
+
+.header-navigation { 
+    display: flex;
+    border-bottom: 1px solid var(--color-cornflower)
+    
+    
 }
 
 .logo-style {
@@ -37,6 +90,10 @@ ul {
     line-height: 1.17; 
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    display: flex;
+    margin-right: 76px;
+
+ 
 }
 
  
@@ -58,6 +115,27 @@ ul {
  
  .link:hover {
    color: #404BBF;
+  }
+
+  .link-nav {
+    display: flex;
+    gap: 40px;
+    
+  }
+
+  .contacts-list {
+    display: flex;
+    gap: 40px;
+    
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
   }
 
   .addresss-contacts {
@@ -86,7 +164,12 @@ letter-spacing: 0.32px;
 .hero { 
     background: #2E2F42;
     flex-shrink: 0;
+    padding: 188px 0;
 }
+
+
+    
+
 .hero__title {
     color:  #FFF;
     text-align: center;
@@ -94,7 +177,11 @@ letter-spacing: 0.32px;
     font-size: 56px;
     font-weight: 700;
     line-height:  1.07;
-    letter-spacing: 1.12px;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+    
 }
 
 .hero-button {
@@ -107,6 +194,13 @@ letter-spacing: 0.32px;
     line-height: 24px; /* 150% */
     letter-spacing: 0.64px;
     cursor: pointer;
+    padding: 16px, 32px, 16px, 32px;
+    border-radius: 4px;
+    width: 169px;
+    gap: 10px;
+    border: 0;
+    display: block;
+    margin: 0 auto;
 
 }
 .hero-button:hover, .hero-button:focus {
@@ -114,6 +208,31 @@ background-color: #404BBF;
 }
 
 /* section2 */
+
+.company { 
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.company-list {
+    display: flex;
+    gap: 24px;
+}
+
+.company-delete {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .company-name { 
     color:  #2E2F42;
     font-family: Roboto;
@@ -122,7 +241,12 @@ background-color: #404BBF;
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
+    margin-bottom: 18px;
     
+}
+
+.company-item { 
+    width: 264px;
 }
 .company-text { 
     color: #434455;
@@ -139,7 +263,17 @@ background-color: #404BBF;
 .team { 
     background:  #F4F4FD;
     flex-shrink: 0;
+    padding-bottom: 120px;
 }
+
+.team-list { 
+    display: flex;
+   gap: 24px;
+   
+    
+}
+
+
 
 .team-name {
     color:  #2E2F42;
@@ -151,11 +285,16 @@ background-color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
 .team-photo {
     background:  #FFF;
     justify-content: center;
     text-align: center;
+    width: 264px;
+    border-radius: 0px 0px 4px 4px;
+    
 }
 
 .team-heroes {
@@ -167,6 +306,8 @@ background-color: #404BBF;
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
+    gap: 8px;
+    margin-top: 32px;
 }
 .team-profession {
     color: #434455;
@@ -177,12 +318,31 @@ background-color: #404BBF;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
+    margin-bottom: 32px;
 }
 
 .portfolio {
     background: #FFF;
     
 }
+
+.portfolio-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
 .portfolio-name {
     color: #2E2F42;
     text-align: center;
@@ -193,8 +353,17 @@ background-color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
+    padding-top: 120px;
+    margin-bottom: 72px;
 }
 .portfolio-list { 
+   
+    
+    
+}
+
+    
+    
     
 background:  #FFF;
 justify-content: center;
@@ -210,6 +379,9 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 120% */
 letter-spacing: 0.4px;
+
+
+
 }
 .portfolio-title { 
     color: #434455;
