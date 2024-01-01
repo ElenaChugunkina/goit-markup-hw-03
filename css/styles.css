@@ -38,7 +38,7 @@ button {
 
 .container {
     width: 100%;
-    max-width: 1128px ;
+    max-width: 1158px ;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -51,8 +51,8 @@ button {
 
 .navigation { 
     background:  #FFF;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    
+    border-bottom: 1px solid #e7e9fc;
     
     
     
@@ -64,7 +64,8 @@ button {
 
 .header-navigation { 
     display: flex;
-    border-bottom: 1px solid var(--color-cornflower)
+    align-items: center;
+    
     
     
 }
@@ -120,6 +121,7 @@ button {
   .link-nav {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
     
   }
 
@@ -196,11 +198,12 @@ letter-spacing: 0.32px;
     cursor: pointer;
     padding: 16px, 32px, 16px, 32px;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     gap: 10px;
     border: 0;
     display: block;
     margin: 0 auto;
+    height: 56px;
 
 }
 .hero-button:hover, .hero-button:focus {
@@ -241,7 +244,7 @@ background-color: #404BBF;
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
     
 }
 
@@ -263,7 +266,8 @@ background-color: #404BBF;
 .team { 
     background:  #F4F4FD;
     flex-shrink: 0;
-    padding-bottom: 120px;
+    
+    padding: 120px 0;
 }
 
 .team-list { 
@@ -285,8 +289,8 @@ background-color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
+    
 }
 .team-photo {
     background:  #FFF;
@@ -294,20 +298,27 @@ background-color: #404BBF;
     text-align: center;
     width: 264px;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4); 
     
+}
+
+.team-container {
+    padding-top: 32px; 
+    padding-bottom: 32px;
 }
 
 .team-heroes {
     color: #2E2F42;
-    text-align: center;
+    
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 120% */
     letter-spacing: 0.4px;
-    gap: 8px;
-    margin-top: 32px;
+    text-align: center;
+    margin-bottom: 8px;
+    
 }
 .team-profession {
     color: #434455;
@@ -318,19 +329,21 @@ background-color: #404BBF;
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.32px;
-    margin-bottom: 32px;
+    
 }
 
 .portfolio {
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
     
 }
 
 .portfolio-card {
     display: flex;
     flex-wrap: wrap;
-    gap: 48px 24px;
-    
+    column-gap: 24px;
+    row-gap: 48px;
     
     
     
@@ -353,39 +366,44 @@ background-color: #404BBF;
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-top: 120px;
+    
     margin-bottom: 72px;
 }
 .portfolio-list { 
+    width: calc((100% - 48px) / 3);
    
     
     
 }
 
-    
-    
-    
-background:  #FFF;
-justify-content: center;
-
+.portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
+
+    
+    
+    
+
 
 .portfolio-one {
     color:  #2E2F42;
-text-align: center;
+
 font-family: Roboto;
 font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 120% */
 letter-spacing: 0.4px;
+margin-bottom: 8px;
 
 
 
 }
 .portfolio-title { 
     color: #434455;
-    text-align: center;
+    
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -397,6 +415,8 @@ letter-spacing: 0.4px;
 .footer-content {
     background: #2E2F42;
     flex-shrink: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .logo-two { 
@@ -420,6 +440,8 @@ font-weight: 700;
 line-height: 1.17; /* 116.667% */
 letter-spacing: 0.54px;
 text-transform: uppercase;
+display: inline-block; 
+margin-bottom: 16px;
 
 }
 
@@ -431,5 +453,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 150% */
 letter-spacing: 0.32px;
+max-width: 264px;
   
 }
