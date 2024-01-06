@@ -42,33 +42,15 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    
-  
- }
+}
 
- 
-
-
-.navigation { 
+ .navigation { 
     background:  #FFF;
-    
     border-bottom: 1px solid #e7e9fc;
-    
-    
-    
 }
-
-.header-container { 
-   
-    
-}
-
 .header-navigation { 
     display: flex;
     align-items: center;
-    
-    
-    
 }
 
 .logo-style {
@@ -80,9 +62,7 @@ button {
     line-height: 1.17; 
     letter-spacing: 0.54px;
     text-transform: uppercase;
-   
-
- }
+}
  .logo { 
     color:  #4D5AE5;
     font-family: 'Raleway' , sans-serif;
@@ -93,10 +73,7 @@ button {
     letter-spacing: 0.54px;
     text-transform: uppercase;
     display: flex;
-    
     margin-right: 76px;
-
- 
 }
 
  
@@ -115,6 +92,7 @@ button {
     letter-spacing: 0.32px;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: inline-block;
  }
 
  
@@ -125,16 +103,9 @@ button {
   .link-nav {
     display: flex;
     gap: 40px;
-    
-    
-  }
+}
 
-  .navigation-list {
-    
-    
-  }
-
-  .contacts-list {
+.contacts-list {
     display: flex;
     gap: 40px;
     
@@ -144,10 +115,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
-    
-    
-  }
+ }
 
   .addresss-contacts {
     font-style: normal;
